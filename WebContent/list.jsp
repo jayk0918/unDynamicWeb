@@ -9,7 +9,6 @@
 <%	
 	PhoneDao phoneDao = new PhoneDao();
 	List<PersonVo> pList = phoneDao.dbSelect();
-
 %>
     
 <!DOCTYPE html>
@@ -39,7 +38,7 @@
 			<td><%=pList.get(i).getCompany()%></td>
 		</tr>
 		<tr>
-			<td><a href = "./delete.jsp?id = <%=pList.get(i).getPersonId()%>">삭제</a></td>
+			<td><a href = "./delete.jsp?id=<%=pList.get(i).getPersonId()%>">삭제</a></td>
 		</tr>
 	</table>
 	<br>
